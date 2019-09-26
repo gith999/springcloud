@@ -22,7 +22,7 @@ public class CustomerAController {
     }
     
     @RequestMapping("/ribbon-consumer-feign")
-    public String coutomerB() {
+    public String coutomerB(@RequestParam("cusId")String cusId) {
         return feignHelloService.testB();
     }
 }
